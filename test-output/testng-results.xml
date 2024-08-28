@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-08-27T12:54:21 IST" name="Default suite" finished-at="2024-08-27T12:54:37 IST" duration-ms="16123">
+  <suite started-at="2024-08-27T22:59:13 IST" name="Default suite" finished-at="2024-08-27T23:00:15 IST" duration-ms="62216">
     <groups>
     </groups>
-    <test started-at="2024-08-27T12:54:21 IST" name="Default test" finished-at="2024-08-27T12:54:37 IST" duration-ms="16123">
-      <class name="SauceDemo.LoginDemo$TestCase">
-        <test-method signature="LoginDemo()[pri:0, instance:SauceDemo.LoginDemo$TestCase@1aafa419]" started-at="2024-08-27T12:54:21 IST" name="LoginDemo" finished-at="2024-08-27T12:54:37 IST" duration-ms="16041" status="PASS">
+    <test started-at="2024-08-27T22:59:13 IST" name="Default test" finished-at="2024-08-27T23:00:15 IST" duration-ms="62216">
+      <class name="SauceDemo.TestCase">
+        <test-method signature="LoginDemo()[pri:0, instance:SauceDemo.TestCase@a1153bc]" started-at="2024-08-27T22:59:13 IST" name="LoginDemo" finished-at="2024-08-27T23:00:15 IST" duration-ms="62128" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginDemo -->
-      </class> <!-- SauceDemo.LoginDemo$TestCase -->
+      </class> <!-- SauceDemo.TestCase -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

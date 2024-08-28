@@ -1,6 +1,7 @@
 package SauceDemo;
 
 import org.openqa.selenium.By;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
@@ -8,7 +9,6 @@ import org.testng.annotations.Test;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class LoginDemo {
-	public class TestCase {
 		@Test
 		public void LoginDemo() throws InterruptedException {
 			
@@ -22,9 +22,46 @@ public class LoginDemo {
 			driver.findElement(By.xpath("//input[@name ='user-name']")).sendKeys("standard_user");
 			driver.findElement(By.xpath("//input[@name ='password']")).sendKeys("secret_sauce");
 			driver.findElement(By.xpath("//input[@value ='LOGIN']")).click();
-			Thread.sleep(10000);
+			Thread.sleep(1000);
+			driver.findElement(By.xpath("//div[@class='inventory_item_name'][1]")).click();
+			Thread.sleep(1000);
+			driver.findElement(By.xpath("//button[contains(text(),'ADD TO CART')]")).click();
+			Thread.sleep(1000);
+			driver.findElement(By.xpath("//button[contains(text(),'<- Back')]")).click();
+			
+			driver.findElement(By.xpath("//div[contains(text(),'Sauce Labs Bike Light')]")).click();
+			Thread.sleep(1000);
+			driver.findElement(By.xpath("//button[contains(text(),'ADD TO CART')]")).click();
+			Thread.sleep(1000);
+			driver.findElement(By.xpath("//button[contains(text(),'<- Back')]")).click();
+			
+			driver.findElement(By.xpath("//div[contains(text(),'Sauce Labs Bolt T-Shirt')]")).click();
+			Thread.sleep(1000);
+			driver.findElement(By.xpath("//button[contains(text(),'ADD TO CART')]")).click();
+			Thread.sleep(1000);
+			driver.findElement(By.xpath("//button[contains(text(),'<- Back')]")).click();
+			
+			driver.findElement(By.xpath("//div[contains(text(),'Sauce Labs Fleece Jacket')]")).click();
+			Thread.sleep(1000);
+			driver.findElement(By.xpath("//button[contains(text(),'ADD TO CART')]")).click();
+			Thread.sleep(1000);
+			driver.findElement(By.xpath("//button[contains(text(),'<- Back')]")).click();
+			
+			driver.findElement(By.xpath("//div[contains(text(),'Sauce Labs Onesie')]")).click();
+			Thread.sleep(1000);
+			driver.findElement(By.xpath("//button[contains(text(),'ADD TO CART')]")).click();
+			Thread.sleep(1000);
+			driver.findElement(By.xpath("//button[contains(text(),'<- Back')]")).click();
+			
+			driver.findElement(By.xpath("//div[contains(text(),'Test.allTheThings() T-Shirt (Red)')]")).click();
+			Thread.sleep(1000);
+			driver.findElement(By.xpath("//button[contains(text(),'ADD TO CART')]")).click();
+			Thread.sleep(1000);
+			driver.findElement(By.xpath("//button[contains(text(),'<- Back')]")).click();
+			
+			Thread.sleep(5000);
 			driver.quit();
 		}
 
 }
-}
+
