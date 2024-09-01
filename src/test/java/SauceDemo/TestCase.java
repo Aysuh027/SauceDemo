@@ -13,7 +13,7 @@ public class TestCase {
 
 		WebDriverManager.chromedriver().setup();
 		WebDriver driver = new ChromeDriver();
-		String url = "https://www.saucedemo.com/v1/";
+		String url = "https://www.saucedemo.com/";
 		driver.get(url);
 
 		driver.manage().window().maximize();
