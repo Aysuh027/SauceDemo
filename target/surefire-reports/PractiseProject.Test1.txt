@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: PractiseProject.Test1
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.108 s <<< FAILURE! - in PractiseProject.Test1
+PractiseProject.Test1.Test11  Time elapsed: 0.062 s  <<< ERROR!
+java.lang.Error: 
+Unresolved compilation problems: 
+	WebDriver cannot be resolved to a type
+	ChromeDriver cannot be resolved to a type
+
+	at PractiseProject.Test1.Test11(Test1.java:13)
+

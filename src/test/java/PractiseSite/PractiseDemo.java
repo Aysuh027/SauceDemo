@@ -6,17 +6,19 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
 import org.openqa.selenium.Alert;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class PractiseDemo {
+	WebDriver driver;
 	@Test
 	public void Log() {
 
 		WebDriverManager.chromedriver().setup();
-		WebDriver driver = new ChromeDriver();
+		 driver = new ChromeDriver();
 		String url = "file:///D:/Automation%20Selinum/SauceDemo/src/main/java/Practice.html";
 		driver.get(url);
 		driver.manage().window().maximize();
@@ -106,7 +108,12 @@ public class PractiseDemo {
 		driver.findElement(By.id("opentab")).click();
 		Thread.sleep(3000);
 
+		
+	}
+	@AfterMethod
+	public void Quit() {
 		driver.quit();
+		System.out.println("Test Close");
 	}
 
 }
